@@ -36,7 +36,7 @@ def Invite_Faculty(request,id,name,email):
     return JsonResponse({"status":response})
 
 def Password_Reset_Initiator(request,id,email):
-    path = os.path.join(BASE_DIR, "templates\\reset.html")
+    path = "reset.html"
     cipher,key = encrypt_text(id)
     cipher = quote(cipher)
     response = send_mail("Password Reset - Sri Vasavi Engineering College",strip_tags(render_to_string(path,{'id':id, 'cipher':cipher})),EMAIL_HOST_USER,[email],fail_silently=False)
