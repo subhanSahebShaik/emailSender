@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Sri Vasavi Engineering College</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; line-height: 1.6">
+    <div style="max-width: 600px; margin: 0 auto">
+      <div
+        style="
+          background-color: #007bff;
+          color: #ffffff;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        <h2>Welcome to Sri Vasavi Engineering College</h2>
+      </div>
+      <div style="padding: 20px">
+        <p>Dear {{name}},</p>
+        <p>
+          We are thrilled to welcome you to Sri Vasavi Engineering College as our newest faculty member! We believe that your expertise and passion for [relevant field] will greatly contribute to our institution's success.
+        </p>
+        <p>Below are the details for your new faculty position:</p>
+        <ul>
+          <li><strong>Name:</strong> {{ name }}</li>
+          <li><strong>Email:</strong> {{ email }}</li>
+          <li><strong>Faculty ID:</strong> {{ id }}</li>
+        </ul>
+        <p>
+          Your role as a faculty member is essential to our commitment to academic excellence, and we are confident that your contributions will have a positive impact on our students and the entire Sri Vasavi Engineering College community.
+        </p>
+        <p>
+          We want to ensure that your onboarding experience is smooth and that you feel welcomed and supported from day one. Our HR team will reach out to you shortly to provide additional information about the onboarding process, including any required paperwork, orientation sessions, and access to necessary resources.
+        </p>
+        <p>
+          If you have any immediate questions or concerns, please don't hesitate to reach out to our HR department at <a href="mailto:info@sves.org.in">info@sves.org.in</a>.
+        </p>
+        <p>
+          Once again, welcome to Sri Vasavi Engineering College! We look forward to working together and achieving great success.
+        </p>
+        <p>Best regards,</p>
+        <p>
+          [Your Full Name]<br />[Your Title]<br />Sri Vasavi Engineering
+          College<br />[Contact Information]
+        </p>
+      </div>
+      <div style="background-color: #f5f5f5; padding: 10px; text-align: center">
+        <p>Sri Vasavi Engineering College - PedaTadepalli - 123456789</p>
+      </div>
+    </div>
+  </body>
+</html>
