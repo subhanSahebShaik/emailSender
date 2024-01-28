@@ -31,7 +31,7 @@ def decrypt_text(encrypted_text,key):
 '''
 
 def Invite_Faculty(request,id,name,email):
-    path = os.path.join(BASE_DIR, "templates\invitation.html")
+    path = "invitation.html"
     response = send_mail("Welcome to Sri Vasavi Engineering College",strip_tags(render_to_string(path,{'id':id,'name':name,'email':email})),EMAIL_HOST_USER,[email],fail_silently=False)
     return JsonResponse({"status":response})
 
