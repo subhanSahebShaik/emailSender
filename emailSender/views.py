@@ -10,8 +10,8 @@ from urllib.parse import quote, unquote
 
 
 
-def encrypt_text(request,text,key=""):
-    key = Fernet.generate_key() if key == "" else key
+def encrypt_text(request,text,key=None):
+    key = Fernet.generate_key() if key == None else key
     cipher_suite = Fernet(key)
     # Encrypt the text
     encrypted_text = cipher_suite.encrypt(text.encode('utf-8'))
