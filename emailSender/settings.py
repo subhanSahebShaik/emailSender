@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-xh30l#hr%tz+a1a7e+mp1^^(3k^i8&5eecc6d$h7$%ju6_pv70"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["email-api-robo.onrender.com"]
 
