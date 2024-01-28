@@ -15,7 +15,7 @@ def encrypt_text(request,text,key=None):
     cipher_suite = Fernet(key)
     # Encrypt the text
     encrypted_text = cipher_suite.encrypt(text.encode('utf-8'))
-    return JsonResponse({"cipher":encrypted_text,"key":key.encode('utf-8')})
+    return JsonResponse({"cipher":encrypted_text,"key":key.decode('utf-8')})
 
 '''
 
